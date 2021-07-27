@@ -4,13 +4,14 @@
 <head>
     <title>Forene Wiki</title>
     <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <main>
         <div class="wiki-site-wrapper">
-            <nav>
+            <nav id="nav-bar">
 
                 <img class="logo" src="assets/border.png">
 
@@ -25,7 +26,7 @@
 
                 </div>
                 <div class="dropdown" id="menu-button">
-                    <a href="races.html" id="menu-button"> Races</a>
+                    <a href="races.html" id="menu-button">Races</a>
                     <div class="dropdown-content">
                         <a href="races.html#humans">Humans</a>
                         <a href="races.html#dwarves">Dwarves</a>
@@ -78,7 +79,7 @@
                         <a href="creatures_env.html" class="mobile-dropdown">Bestiary</a>
                         <a href="races.html" class="mobile-dropdown">Races</a>
                         <a href="geography.html" class="mobile-dropdown">Geography</a>
-                        <a href="history.html" class="mobile-dropdown">History</a>                   
+                        <a href="history.html" class="mobile-dropdown">History</a>
                         <a href="pantheons.html" class="mobile-dropdown">Pantheons</a>
                         <a href="organizations.html" class="mobile-dropdown">Organizations</a>
                     </div>
@@ -91,7 +92,7 @@
 
             <hr class="page-header-separator">
 
-            <div class="main-page-left">
+            <div class="main-page-left" id="main-index">
 
 
                 <blockquote class="quote">
@@ -104,6 +105,8 @@
                 <blockquote class="author">
                     - <b>Artemon Fox</b>, inventor, scientist, philanthroper
                 </blockquote>
+
+
                 <article class="article-container">
                     <h1 class="article-title">
                         The Geography of Forene
@@ -237,14 +240,15 @@
                 </article>
             </div>
 
-
         </div>
         <footer>
             <article class="bottom-l">
                 <h2>Find us around the web!</h2>
                 <p class="links">
-                    <a href="https://soundcloud.com/survivalcheck" target="_blank"><img src="assets/orange_white_64-94fc761.png"></a>
-                    <a href="https://www.instagram.com/survivalcheckshow/" target="_blank"><img src="assets/Instagram_AppIcon_Aug2017.png"></a>
+                    <a href="https://soundcloud.com/survivalcheck" target="_blank"><img
+                            src="assets/orange_white_64-94fc761.png"></a>
+                    <a href="https://www.instagram.com/survivalcheckshow/" target="_blank"><img
+                            src="assets/Instagram_AppIcon_Aug2017.png"></a>
                     <a href="https://www.youtube.com/channel/UCcy6WP0aF5JSOe3gmNAStqQ" target="_blank"><img
                             src="assets/youtube_social_squircle_red.png"></a>
                 </p>
@@ -252,15 +256,17 @@
             </article>
             <article class="bottom-m">
                 <h2>Make your own article with our template!</h2>
-        
+
                 <a href="DnD_World_Setting_Site_template.html" class="download-button">Template</a>
-        
-        
+
+
             </article>
+
+
             <article class="bottom-r">
                 <h2>Contact Us Here!</h2>
                 <p>Want to add value to this campaign setting?</p>
-                <form method="POST" action="mailto: tevisreilly1@hotmail.com">
+                <form action="mailto: tevisreilly1@hotmail.com"  method="POST"  enctype="application/x-www-form-urlencoded">
                     <label for="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
                     <label for="lname">Last Name</label>
@@ -273,10 +279,11 @@
                     <input type="submit" value="Submit">
                 </form>
             </article>
-        
+
         </footer>
     </main>
 
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
 
 

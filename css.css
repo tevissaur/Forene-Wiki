@@ -40,6 +40,7 @@ p.world-name a {
 }
 
 .wiki-site-wrapper {
+    margin-top: 5%;
     display: grid;
     grid-template-areas: 'nav nav nav nav nav nav' 'left left left left left right';
     grid-gap: 0;
